@@ -4,7 +4,7 @@ view: cdf_netsuite_master {
   dimension_group: date {
     type: time
     timeframes: [date, day_of_week, hour_of_day, month]
-    sql: ${TABLE}.Date ;;
+    sql: cast(${TABLE}.Date as datetime) ;;
   }
 
   dimension: date_yymm {

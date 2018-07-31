@@ -38,8 +38,8 @@ view: cdf_webex_session_master {
 
   dimension_group: date {
     type: time
-    timeframes: [date, day_of_week, hour_of_day, month]
-    sql: ${TABLE}.Date ;;
+    timeframes: [date, day_of_week, month]
+    sql: cast(${TABLE}.Date as date) ;;
   }
 
   dimension: department {

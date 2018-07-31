@@ -39,7 +39,7 @@ view: cdf_webex_summary_master {
   dimension_group: date {
     type: time
     timeframes: [date, day_of_week, month]
-    sql: ${TABLE}.Date ;;
+    sql: cast(${TABLE}.Date as date) ;;
   }
 
   dimension: department {
