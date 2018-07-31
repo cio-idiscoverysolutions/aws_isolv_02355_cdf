@@ -13,7 +13,7 @@ view: cdf_8x8_master {
 
   dimension: end_date_and_time {
     type: string
-    sql: ${TABLE}."End Date and Time" ;;
+    sql: todate(${TABLE}."End Date and Time") ;;
   }
 
   dimension: ext {
