@@ -6,8 +6,9 @@ view: cdf_mimecast_master {
     sql: ${TABLE}.Attachment ;;
   }
 
-  dimension: date {
-    type: string
+  dimension_group: date {
+    type: time
+    timeframes: [date, day_of_week, hour_of_day, month]
     sql: ${TABLE}.Date ;;
   }
 

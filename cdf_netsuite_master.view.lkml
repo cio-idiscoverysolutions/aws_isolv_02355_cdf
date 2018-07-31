@@ -1,8 +1,9 @@
 view: cdf_netsuite_master {
   sql_table_name: dbo.CDF_Netsuite_Master ;;
 
-  dimension: date {
-    type: string
+  dimension_group: date {
+    type: time
+    timeframes: [date, day_of_week, hour_of_day, month]
     sql: ${TABLE}.Date ;;
   }
 

@@ -36,8 +36,9 @@ view: cdf_webex_session_master {
     sql: ${TABLE}.Custom9 ;;
   }
 
-  dimension: date {
-    type: string
+  dimension_group: date {
+    type: time
+    timeframes: [date, day_of_week, hour_of_day, month]
     sql: ${TABLE}.Date ;;
   }
 

@@ -75,8 +75,9 @@ view: cdf_8x8_master {
     sql: ${TABLE}."Last Name" ;;
   }
 
-  dimension: start_date_and_time {
-    type: string
+  dimension_group: start_date_and_time {
+    type: time
+    timeframes: [date, day_of_week, month, hour]
     sql: ${TABLE}."Start Date and Time" ;;
   }
 
