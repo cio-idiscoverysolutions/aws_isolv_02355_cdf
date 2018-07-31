@@ -78,7 +78,7 @@ view: cdf_8x8_master {
   dimension_group: start_date_and_time {
     type: time
     timeframes: [date, day_of_week, month, hour]
-    sql: ${TABLE}."Start Date and Time" ;;
+    sql: todate(${TABLE}."Start Date and Time") ;;
   }
 
   dimension: to {
