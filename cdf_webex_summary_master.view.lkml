@@ -67,6 +67,12 @@ view: cdf_webex_summary_master {
     sql: ${TABLE}.iDS_FirstName ;;
   }
 
+  dimension: ids_fullname {
+    type: string
+    sql: ${TABLE}.iDS_fullname ;;
+  }
+
+
   dimension_group: ids_date_loaded {
     type: time
     timeframes: [

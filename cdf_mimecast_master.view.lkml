@@ -22,6 +22,12 @@ view: cdf_mimecast_master {
     sql: ${TABLE}.iDS_FirstName ;;
   }
 
+  dimension: ids_fullname {
+    type: string
+    sql: ${TABLE}.iDS_fullname ;;
+  }
+
+
   dimension: i_ds_last_name {
     type: string
     sql: ${TABLE}.iDS_LastName ;;

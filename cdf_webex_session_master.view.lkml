@@ -91,6 +91,12 @@ view: cdf_webex_session_master {
     sql: ${TABLE}.IDS_LastName ;;
   }
 
+  dimension: ids_fullname {
+    type: string
+    sql: ${TABLE}.IDS_fullname ;;
+  }
+
+
   dimension: ids_source_file {
     type: string
     sql: ${TABLE}.IDS_SourceFile ;;
