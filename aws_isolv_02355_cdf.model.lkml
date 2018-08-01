@@ -51,3 +51,5 @@ explore: src_dlvry {}
 explore: src_files {}
 
 explore: src_master {}
+
+explore: vw_master_custodians_by_hour {}

@@ -25,4 +25,11 @@ view: vw_master_custodians_by_hour {
     type: count
     drill_fields: []
   }
+
+
+  measure: total_events {
+    type: sum
+    sql: ${TABLE}.Count ;;
+  }
+
 }
