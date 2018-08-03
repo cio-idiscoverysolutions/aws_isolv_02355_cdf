@@ -53,3 +53,5 @@ explore: src_files {}
 explore: src_master {}
 
 explore: vw_master_custodians_by_hour {}
+
+explore: cdf_i_solved_master {}
