@@ -1,5 +1,5 @@
 view: vw_master_custodians_by_hour {
-  sql_table_name: dbo.vwMasterCustodiansByHour ;;
+  sql_table_name: dbo.vwMasterCustodiansByHour_Mimecast_Sent_Outbound ;;
 
   dimension: count_raw {
     type: number
